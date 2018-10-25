@@ -4,10 +4,10 @@ a)
 2. b =  '<';
 3.  0.345
 4. int
-5. ja, double
-6.ja 
-7. ja
-8.
+5. ja, vom DatenTyp double in Fließkomma
+6. 
+7. ja vom Datentyp char (einer neue Zeile) 
+8. 8 / 3
 9. x  =  x * 2;
 b)
 1. die Umwandlung in Festkommazahl und die Darstellung werden 8 Nachkommastellen verwendet.
