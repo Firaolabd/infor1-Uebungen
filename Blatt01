@@ -52,7 +52,7 @@ Zeile 4: printf statt println und %2f statt %i
 int main(void)
 {
  	  double d = 17.33;
- 	  printf("%2f", d);
+ 	  printf("%.2f", d);
  	  return 0;
 }
 d)
