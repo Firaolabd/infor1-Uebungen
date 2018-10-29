@@ -7,7 +7,7 @@ a)
 5. ja, vom DatenTyp double in Fließkommadarstellen
 6. nein, --1 ist kein Zeichen und keine Escapesequenz
 7. ja vom Datentyp char (einer neue Zeile) 
-8. 8 / 3
+8. 2
 9. x  =  x * 2;
 b)
 1. die Umwandlung in Festkommazahl und die Darstellung werden 8 Nachkommastellen verwendet.
