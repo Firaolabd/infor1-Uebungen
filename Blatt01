@@ -133,7 +133,7 @@ int main(void)
 }
 Aufgabe4,
 a)
-  ( a + b + c)/ 3
+  double mitte_drei_zahlen(int a, int b, int c)
 b)
 #include <stdio.h>
 #define M_PI 3.14159265358979323846
