@@ -176,13 +176,19 @@ d)
     #include <stdio.h>
     #include <stdlib.h>
 
+    int anzahl (char a, char b)
+    {
+        int result = abs(a - b - 1);
+	      return result;
+    }
+
     int main(void)
     {
-        printf("Geben Sie zwei ASCII-Zeichen mit ein leerzeichen zwischen:\n);
         char a;
         char b;
-        scanf("%c \n%c, &a, &b);
-        printf("Anzahl der dazwischenliegenden Zeichen: %i", abs(a - b - 1));
+        printf("Geben Sie zwei ASCII-Zeichen mit ein leerzeichen zwischen:\n");
+        scanf("%c %c", &a, &b);
+        printf("Anzahl der dazwischenliegenden Zeichen: %i", anzahl(a, b));
         return 0;
     }
 e)
