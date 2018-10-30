@@ -179,7 +179,7 @@ d)
     int anzahl (char a, char b)
     {
         int result = abs(a - b - 1);
-	      return result;
+	return result;
     }
 
     int main(void)
