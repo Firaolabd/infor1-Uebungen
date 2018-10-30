@@ -1,210 +1,209 @@
+
+                                        Blatt01
 Aufgabe1,
 a)
-1. double x, y;
-2. b =  '<';
-3.  0.345
-4. int
-5. ja, vom DatenTyp double in Fließkommadarstellen
-6. ja, vom Char * Zeichenkette
-7. ja vom Datentyp char (einer neue Zeile) 
-8. 2
-9. x  =  x * 2;
+    1. double x, y;
+    2. b =  '<';
+    3.  0.345
+    4. int
+    5. ja, vom DatenTyp double in Fließkommadarstellen
+    6. ja, vom Char * Zeichenkette
+    7. ja vom Datentyp char (einer neue Zeile) 
+    8. 2
+    9. x  =  x * 2;
 b)
-1. die Umwandlung in Festkommazahl und die Darstellung werden genau 8 stellen verwendet.
-    prinft("%.8i", 323);
-    ausgabe: 00000323
-2. die Umwandlung in Festkommazahl und genau 10 Stellen (9 Ziffern und das Komma als weitere Stelle) verwendet.
-    printf("%10f", 323.32);
-    ausgabe: 323.320000
-3. ja
-4. nein,  hat keine %h in der Formatzeichenkette
-5. 00011 ABC 123.1
-6. 01.00
+    1. die Umwandlung in Festkommazahl und die Darstellung werden genau 8 stellen verwendet.
+        prinft("%.8i", 323);
+        ausgabe: 00000323
+    2. die Umwandlung in Festkommazahl und genau 10 Stellen (9 Ziffern und das Komma als weitere Stelle) verwendet.
+        printf("%10f", 323.32);
+        ausgabe: 323.320000
+    3. ja
+    4. nein,  hat keine %h in der Formatzeichenkette
+    5. 00011 ABC 123.1
+    6. 01.00
 c)
-1. a –x y
-2. gcc a.c -o p
+    1. a –x y
+    2. gcc a.c -o p
 Aufgabe2,
 a)
-Zeile 1: Rückgabe-Datentyp von main ist int
-Zeile 1: methode main kleingeschrieben
-Zeile 1: nach dem main müssen runde Klammern stehen
-Zeile 2: muss mit geschweiften Klammer schreiben
-Zeile 3: return wird kleingeschrieben
-zeile 3: muss noch Semikolon abgeschlossen
-Zeile 4: muss mit geschweiften Klammer beendet und solle 0 zurückgeben
-int main(void)
-{
-    return 0;
-} 
+    Zeile 1: Rückgabe-Datentyp von main ist int
+    Zeile 1: methode main kleingeschrieben
+    Zeile 1: nach dem main müssen runde Klammern stehen
+    Zeile 2: muss mit geschweiften Klammer schreiben
+    Zeile 3: return wird kleingeschrieben
+    zeile 3: muss noch Semikolon abgeschlossen
+    Zeile 4: muss mit geschweiften Klammer beendet und solle 0 zurückgeben
+    int main(void)
+    {
+        return 0;
+    } 
 b)
-Zeile 1: muss # vor das Wort include
-Zeile 5: muss Anführungszeichen eingeschlossen werden.
-Zeile 5: Das Wort Programmieren statt Proggen
-Zeile 6: fehlt noch return
-#include <stdio.h>
+    Zeile 1: muss # vor das Wort include
+    Zeile 5: muss Anführungszeichen eingeschlossen werden.
+    Zeile 5: Das Wort Programmieren statt Proggen
+    Zeile 6: fehlt noch return
+    #include <stdio.h>
 
-int main(void)
-{
-    printf("Programmieren");
-    return 0;
-}
+    int main(void)
+    {
+        printf("Programmieren");
+        return 0;
+    }
 c)
-Zeile 1: fehlt die include und #
-Zeile 1: nach dem main muss (void) stehen
-Zeile 3: Zeichenkette . statt Zeichenkette ,
-Zeile 4: printf statt println und %.2f statt %i
-#include <stdio.h>
+    Zeile 1: fehlt die include und #
+    Zeile 1: nach dem main muss (void) stehen
+    Zeile 3: Zeichenkette . statt Zeichenkette ,
+    Zeile 4: printf statt println und %.2f statt %i
+    #include <stdio.h>
 
-int main(void)
-{
-    double d = 17.33;
-    printf("%.2f", d);
-    return 0;
-}
+    int main(void)
+    {
+        double d = 17.33;
+        printf("%.2f", d);
+        return 0;
+    }
 d)
-Zeile 1: muss spitze Klammern stehen
-Zeile 5: Zeichenkette a statt Zeichenkette X
-Zeile 6: printf("%c", a) statt printf(d)
-Zeile 7: muss einer geschweiften Klammer abgeschlossen
-#include <stdio.h>
+    Zeile 1: muss spitze Klammern stehen
+    Zeile 5: Zeichenkette a statt Zeichenkette X
+    Zeile 6: printf("%c", a) statt printf(d)
+    Zeile 7: muss einer geschweiften Klammer abgeschlossen
+    #include <stdio.h>
   
-int main(void)
-{
-    char a = 'a';
-    printf("%c", a);
-    return 0;
-}
+    int main(void)
+    {
+        char a = 'a';
+        printf("%c", a);
+        return 0;
+    }
 Aufgabe3,
 a)
-#include <stdio.h>
+    #include <stdio.h>
 
-int main(void)
-{
-    printf("\"Breaking Bad\"");
-    return 0;
-}
-b)
-#include <stdio.h>
-
-int main(void)
-{
-    printf("%%\\tt/%%");
-    return 0;
-}
-c)
-#include <stdio.h>
-
-int main(int argc, char *argv[])
-{
-    printf("%s %s", argv[0], argv[1]);
-    return 0;
-}
-d)
-#include <stdio.h>
-
-int main(int argc, char *argv[])
-{
-    printf("%s\n%i", argv[1], argv[1]);
-    return 0;
-}
-e)
-#include <stdio.h>
-#include <math.h>
-
-int main(int argc, char *argv[])
-{
-    printf("%.2f", sqrt(argc - 1));
-    return 0;
-}
-f)
-#include <stdio.h>
-
-int main(int argc, char *argv[])
-{
-    printf("%s %s", argv[0], argv[0]);
-    return 0;
-}
-g)
-#include <stdio.h>
-
-int main(void)
-{
-    double x;
-    scanf("%lf", &x);
-    printf("%f\n", x);
-    printf("%e", x);
-    return 0;
-}
-Aufgabe4,
-a)
-  double mitte_drei_zahlen(int a, int b, int c) {
-    rerturn (a + b +c) / 3;
+    int main(void)
+    {
+        printf("\"Breaking Bad\"");
+        return 0;
     }
 b)
-#include <stdio.h>
-#define M_PI 3.14159265358979323846
-double calc_circle_area(double radius);
-int main(void)
-{
-    double radius;
-    printf("BERECHNUNG DER KREISFLAECHE\n");
-    printf("---------------------------\n");
-    printf("Bitte einen Radius eingeben: ");
-    scanf("%lf", &radius);
-    printf("Der Flaecheninhalt eines Kreises mit Radius %f betraegt: %f",
-    radius, calc_circle_area(radius));
-    return 0;
-}
-    double calc_circle_area(double radius)
-{
-    return radius * radius * M_PI;
-}
+    #include <stdio.h>
+
+    int main(void)
+    {
+        printf("%%\\tt/%%");
+        return 0;
+    }
 c)
-#include <stdio.h>
+    #include <stdio.h>
 
-int main(void)
-{
-    char c;
-    printf("Geben sie ein ASCII-Zeichens:\n");
-    scanf("%c", &c);
-    printf("Dezimalcode ist:\n %d", c);
-    return 0;
-}
+    int main(int argc, char *argv[])
+    {
+        printf("%s %s", argv[0], argv[1]);
+        return 0;
+    }
 d)
-#include <stdio.h>
-#include <stdlib.h>
+    #include <stdio.h>
 
-int main(void)
-{
-    char a;
-    char b;
-    printf("Geben Sie zwei ASCII-Zeichen mit ein leerzeichen zwischen:\n);
-    scanf("%c \n%c, &a, &b);
-    printf("Anzahl der dazwischenliegenden Zeichen: %i", abs(a - b - 1));
-    return 0;
-}
+    int main(int argc, char *argv[])
+    {
+        printf("%s\n%i", argv[1], argv[1]);
+        return 0;
+    }
 e)
-#include <stdio.h>
-#include <math.h>
+    #include <stdio.h>
+    #include <math.h>
 
-double mb_zu_mib(double mb)
-{
-    return mb * (pow(5,6) / pow(2,14));
-    /*1 B = 10^(-6) MB
-      1 MiB = 2^20 B
-      1 MB = 2^(-20)*10^6 MiB
-      also 1 MB = 5^6 / 2^14 MiB
-    */
-}
+    int main(int argc, char *argv[])
+    {
+        printf("%.2f", sqrt(argc - 1));
+        return 0;
+    }
+f)
+    #include <stdio.h>
 
-int main(void)
-{
-    double mb;
-    printf("Geben Sie eingegebene Zahl von Megabyte:\n");
-    scanf("%lf", &mb);
-    printf("%f MB = %.14f MiB\n", mb, mb_zu_mib(mb));
-    return 0;
- }
+    int main(int argc, char *argv[])
+    {
+        printf("%s %s", argv[0], argv[0]);
+        return 0;
+    }
+g)
+    #include <stdio.h>
+
+    int main(void)
+    {
+        double x;
+        scanf("%lf", &x);
+        printf("%f\n", x);
+        printf("%e", x);
+        return 0;
+    }
+Aufgabe4,
+a)
+    double mitte_drei_zahlen(int a, int b, int c) {
+        rerturn (a + b +c) / 3;
+    }
+b)
+    #include <stdio.h>
+    #define M_PI 3.14159265358979323846
+    double calc_circle_area(double radius);
+    int main(void)
+    {
+        double radius;
+        printf("BERECHNUNG DER KREISFLAECHE\n");
+        printf("---------------------------\n");
+        printf("Bitte einen Radius eingeben: ");
+        scanf("%lf", &radius);
+        printf("Der Flaecheninhalt eines Kreises mit Radius %f betraegt: %f",
+        radius, calc_circle_area(radius));
+        return 0;
+    }
+        double calc_circle_area(double radius)
+    {
+        return radius * radius * M_PI;
+    }
+c)
+    #include <stdio.h>
+
+    int main(void)
+    {
+        char c;
+        printf("Geben sie ein ASCII-Zeichens:\n");
+        scanf("%c", &c);
+        printf("Dezimalcode ist:\n %d", c);
+        return 0;
+    }
+d)
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    int main(void)
+    {
+        printf("Geben Sie zwei ASCII-Zeichen mit ein leerzeichen zwischen:\n);
+        char a;
+        char b;
+        scanf("%c \n%c, &a, &b);
+        printf("Anzahl der dazwischenliegenden Zeichen: %i", abs(a - b - 1));
+        return 0;
+    }
+e)
+    #include <stdio.h>
+    #include <math.h>
+
+    double mb_zu_mib(double mb)
+    {
+        return mb * (pow(5,6) / pow(2,14));
+        /*1 B = 10^(-6) MB und 1 MiB = 2^20 B folgt 1 MB = 2^(-20)*10^6 MiB
+      also 1 MB = 5^6 / 2^14 MiB*/
+    }
+
+    int main(void)
+    {
+        double mb;
+        printf("Geben Sie eingegebene Zahl von Megabyte:\n");
+        scanf("%lf", &mb);
+        printf("%f MB = %.14f MiB\n", mb, mb_zu_mib(mb));
+        return 0;
+    }
 
 
     
