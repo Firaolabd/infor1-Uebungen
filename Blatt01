@@ -5,13 +5,17 @@ a)
 3.  0.345
 4. int
 5. ja, vom DatenTyp double in Fließkommadarstellen
-6. nein, --1 ist kein Zeichen und keine Escapesequenz
+6. ja, vom Char * Zeichenkette
 7. ja vom Datentyp char (einer neue Zeile) 
 8. 2
 9. x  =  x * 2;
 b)
-1. die Umwandlung in Festkommazahl und die Darstellung werden 8 Nachkommastellen verwendet.
-2. die Umwandlung in Festkommazahl und mindestens 10 Stellen verwendet.
+1. die Umwandlung in Festkommazahl und die Darstellung werden genau 8 stellen verwendet.
+    prinft("%.8i", 323);
+    ausgabe: 00000323
+2. die Umwandlung in Festkommazahl und genau 10 Stellen (9 Ziffern und das Komma als weitere Stelle) verwendet.
+    printf("%10f", 323.32);
+    ausgabe: 323.320000
 3. ja
 4. nein,  hat keine %h in der Formatzeichenkette
 5. 00011 ABC 123.1
@@ -45,10 +49,10 @@ int main(void)
     return 0;
 }
 c)
-Zeile 1: fehlt die include
+Zeile 1: fehlt die include und #
 Zeile 1: nach dem main muss (void) stehen
 Zeile 3: Zeichenkette . statt Zeichenkette ,
-Zeile 4: printf statt println und %2f statt %i
+Zeile 4: printf statt println und %.2f statt %i
 #include <stdio.h>
 
 int main(void)
@@ -60,7 +64,7 @@ int main(void)
 d)
 Zeile 1: muss spitze Klammern stehen
 Zeile 5: Zeichenkette a statt Zeichenkette X
-Zeile 6:
+Zeile 6: printf("%c", a) statt printf(d)
 Zeile 7: muss einer geschweiften Klammer abgeschlossen
 #include <stdio.h>
   
@@ -133,7 +137,9 @@ int main(void)
 }
 Aufgabe4,
 a)
-  double mitte_drei_zahlen(int a, int b, int c)
+  double mitte_drei_zahlen(int a, int b, int c) {
+    rerturn (a + b +c) / 3;
+    }
 b)
 #include <stdio.h>
 #define M_PI 3.14159265358979323846
@@ -173,8 +179,8 @@ int main(void)
     char a;
     char b;
     printf("Geben Sie zwei ASCII-Zeichen mit ein leerzeichen zwischen:\n);
-    scanf("%c %c, &a, &b);
-    printf("Anzahl der dazwischenliegenden Zeichen: %i", abs(a - b));
+    scanf("%c \n%c, &a, &b);
+    printf("Anzahl der dazwischenliegenden Zeichen: %i", abs(a - b - 1));
     return 0;
 }
 e)
